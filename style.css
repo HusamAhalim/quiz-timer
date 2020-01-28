@@ -1,0 +1,115 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+input[type=radio] {
+    border: 0px;
+    width: 20px;
+    height: 2em;
+}
+
+/* quiz container */
+ .quizContainer {
+    background-color: rgb(250, 248, 248);
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+    
+    padding-top: 5px;
+    padding-bottom: 30px
+    
+    position: relative;
+}
+
+.nextButton {
+    box-shadow: 3px 3px 5px #888;
+    border-radius: 6px;
+   
+    height: 40px;
+    text-align: center;
+    background-color:#ddd8d8;
+   
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin: auto;
+	font: size 15;px;
+	font-weight:bold;
+    padding-top: 5px;
+	float:right;
+	right:30%;
+}
+
+.preButton {
+    box-shadow: 3px 3px 5px #888;
+    border-radius: 6px;
+   
+    height: 40px;
+    text-align: center;
+    background-color: #ddd8d8;
+   
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin: auto;
+	font: size 15px;
+	font-weight:bold;
+    padding-top: 5px;
+	float:left;
+	left:30%;
+}
+
+.question {
+    font-family:'Century', serif;
+    font-size: 1.5em;
+	font-weight:bold;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #ddd8d8;
+    text-align: center;
+}
+.quizMessage {
+    background-color: rgb(252, 250, 249);
+    border-radius: 6px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+	font-size:20px;
+	font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+	position:absolute;
+	top:80%;
+	left:40%;
+}
+.choiceList {
+    font-family: 'Arial', serif;
+    color: #170bb3;
+	font-size:15px;
+	font-weight:bold;
+}
+.result {
+    width: 40%;
+    height: auto;
+    border-radius: 6px;
+    background-color: rgb(253, 251, 249);
+    margin: auto;
+	color:black;
+    text-align: center;
+	font-size:25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight:bold;
+	position:absolute;
+	top:80%;
+	left:30%;
+}
