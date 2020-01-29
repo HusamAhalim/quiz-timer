@@ -1,6 +1,10 @@
+function myFunction() {
+	
+  }
+
 var questions = [{
     question: "1. What is JavaScript?",
-    choices: ["A Way to Order coffee", "StarBucks Secret Menue", "How People Write after to Much Coffee", "A programming Language"],
+    choices: ["A Way to Order coffee", "StarBucks Secret Menue", "How People Write after to Much Coffee", "A Programming Language"],
     correctAnswer: 3
 }, {
     question: "2. How to empty an array in JavaScript?",
@@ -279,7 +283,7 @@ function viewResults()
 
 
 var the_results= [];
-the_results = prompt("Enter Initnals? to begin");
+the_results = prompt("Enter Initnals and click `OK` to begin");
 localStorage.setItem("Initals",  JSON.stringify(the_results));
 
 //...
