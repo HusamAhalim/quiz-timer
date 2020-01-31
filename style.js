@@ -27,7 +27,7 @@ var questions = [{
     choices: ["327", "12", "14", "57"],
     correctAnswer: 3
 },{
-	question: "8. In a fight Between Batman and Superman. Who Would Win?",
+	question: "8. In a fight Between Batman and Superman. Who Would Lose ?",
     choices: ["We All Lose", "Batman", "Movie Fans Because That Movie Sucked", "Superman"],
     correctAnswer: 2
 },{
@@ -273,7 +273,7 @@ function viewResults()
 }
 
 
-the_results = prompt("Enter Initnals and click `OK` to begin");
+the_results = prompt("3 Minutes, 10 Questions. Enter Initnals and click `OK` to begin");
  /* initals in Local storage*/
 localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
 
