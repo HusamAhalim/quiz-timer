@@ -1,7 +1,3 @@
-function myFunction() {
-	
-  }
-
 var questions = [{
     question: "1. What is JavaScript?",
     choices: ["A Way to Order coffee", "StarBucks Secret Menue", "How People Write after to Much Coffee", "A Programming Language"],
@@ -58,7 +54,7 @@ $(document).ready(function ()
     // Display the first question
     displayCurrentQuestion();
     $(this).find(".quizMessage").hide();
-    $(this).find(".preButton").attr('disabled', 'disabled');
+	$(this).find(".preButton").attr('disabled', 'disabled');
 	
 	timedCount();
 	
@@ -157,14 +153,14 @@ function timedCount()
 			return false; 
 		}
 		
-		var hours = parseInt( c / 3600 ) % 24;
+		// timer
 		var minutes = parseInt( c / 60 ) % 60;
 		var seconds = c % 60;
 		var result = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds  < 10 ? "0" + seconds : seconds);            
 		$('#timer').html(result);
 		
 		if(c == 0 )
-		// final core
+		// final score
 		{
 					displayScore();
 					$('#iTimeShow').html('Quiz Time Completed!');
@@ -176,7 +172,6 @@ function timedCount()
 					
 		}
 		
-	
 		c = c - 1;
 		t = setTimeout(function()
 		{
@@ -278,13 +273,9 @@ function viewResults()
 }
 
 
-
-
-
-
-var the_results= [];
 the_results = prompt("Enter Initnals and click `OK` to begin");
-localStorage.setItem("Initals",  JSON.stringify(the_results));
+ /* initals in Local storage*/
+localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
 
-//...
-var storedInitals = JSON.parse(localStorage.getItem(displayScore));
+
+// this works almost.. localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
