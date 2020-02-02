@@ -7,7 +7,7 @@ https://github.com/HusamAhalim/quiz-timer
 
  # Live URL
 
-https://husamahalim.github.io/quiz-timer/.
+https://husamahalim.github.io/quiz-timer/
  # Code Example
 
 Current projects is to build a timer-based quiz application that stores high scores client-side

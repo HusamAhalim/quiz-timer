@@ -161,6 +161,7 @@ function timedCount()
 		
 		if(c == 0 )
 		// final score
+		
 		{
 					displayScore();
 					$('#iTimeShow').html('Quiz Time Completed!');
@@ -274,8 +275,8 @@ function viewResults()
 
 
 the_results = prompt("3 Minutes, 10 Questions. Enter Initnals and click `OK` to begin");
- /* initals in Local storage*/
-localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
+ /* initals and score in Local storage*/
+// localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
+localStorage.getItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length));
 
-
-// this works almost.. localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
+// this almost works.. localStorage.setItem("Initals", JSON.stringify(the_results) + (correctAnswers + " out of: " + questions.length)); 
